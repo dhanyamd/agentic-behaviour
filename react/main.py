@@ -124,7 +124,6 @@ class ReactAgent:
 
             # Store the result using the tool call ID
             observations[validated_tool_call["id"]] = result
-        print(observations)
         return observations 
 
     def run(
@@ -167,14 +166,14 @@ class ReactAgent:
             for _ in range(max_rounds):
                 
                 completion = completions_create(self.client, chat_history, self.model)
-
+                print("COMPLE",completion)
                 response = extract_tag_content(str(completion), "response")
+                print("RES",response)
                 if response.found:
                     return response.content[0]
 
                 thought = extract_tag_content(str(completion), "thought")
                 tool_calls = extract_tag_content(str(completion), "tool_call")
-
                 update_chat_history(chat_history, completion, "assistant")
 
                 # Check if thought tag was found before printing

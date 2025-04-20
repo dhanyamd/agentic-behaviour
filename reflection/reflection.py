@@ -1,10 +1,10 @@
 from dotenv import load_dotenv
 from groq import Groq
 
-from completions import build_prompt_structure
-from completions import completions_create
-from completions import FixedFirstChatHistory
-from completions import update_chat_history
+from reflection.completions import build_prompt_structure
+from reflection.completions import completions_create
+from reflection.completions import FixedFirstChatHistory
+from reflection.completions import update_chat_history
 
 load_dotenv()
 

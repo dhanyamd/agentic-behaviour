@@ -2,7 +2,6 @@ import json
 import requests 
 from tool import tool 
 from tool_pattern import ToolAgent 
-from completions import build_prompt_structure
 
 def fetch_top_hacker_news_stories(top_n: int): 
     """ 

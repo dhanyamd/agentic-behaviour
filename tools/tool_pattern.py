@@ -10,11 +10,11 @@ from groq import Groq
 
 from tool import Tool
 from tool import validate_arguments
-from completions import build_prompt_structure
-from completions import ChatHistory
-from completions import completions_create
-from completions import update_chat_history
-from extractions import extract_tag_content
+from reflection.completions import build_prompt_structure
+from reflection.completions import ChatHistory
+from reflection.completions import completions_create
+from reflection.completions import update_chat_history
+from reflection.extractions import extract_tag_content
 
 load_dotenv()
 
