@@ -1,7 +1,6 @@
 from collections import deque
 
-from graphviz import Digraph  # type: ignore
-
+from graphviz import Digraph 
 
 
 class Crew:

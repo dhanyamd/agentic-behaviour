@@ -1,7 +1,7 @@
 from textwrap import dedent
 
 from crew import Crew
-from react import ReactAgent
+from react.react import ReactAgent
 from tools.tool import Tool
 
 
