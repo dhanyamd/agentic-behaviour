@@ -42,6 +42,8 @@ json.loads(fetch_top_hacker_news_stories(top_n=5))
 
 hn_tool = tool(fetch_top_hacker_news_stories)
 hn_tool.name 
+print("TOOOL FN",hn_tool.fn)
+print("TOOOL FN SIGN",hn_tool.fn_signature)
 
 tool_agent = ToolAgent(tools=[hn_tool])
 output = tool_agent.run(user_msg="Tell me the top 5 Hacker News stories right now") 

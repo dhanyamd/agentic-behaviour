@@ -131,6 +131,7 @@ class ToolAgent:
         tool_call_response = completions_create(
             self.client, messages=tool_chat_history, model=self.model
         )
+        print("TOOL CALLL RESPONSE HELLO",tool_call_response)
         tool_calls = extract_tag_content(str(tool_call_response), "tool_call")
 
         if tool_calls.found:
