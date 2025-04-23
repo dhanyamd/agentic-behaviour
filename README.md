@@ -23,7 +23,7 @@
     agent under the hood
 
 
-7) **Multi-agent pattern :**
+7) **Multi-agent pattern :** 
    
     This agent is an example implementation of crews and multiple agents working together providing one's output as context to another agent to execute multiple calls simultaneously. This illustrates how
     multiple agents with different functions can exist together and how one's response is crucial to be fed into as context to the other. We here use two agents poem agent and poem translater agent where
